@@ -1,7 +1,6 @@
 package MarioGame;
-import java.awt.Dimension;
 import java.awt.Canvas;
-import javax.swing.JFrame;
+
 
 
 
@@ -14,7 +13,7 @@ public class Game extends Canvas implements Runnable{
     public static final String TITLE = "Super Mario bros";
 
     public Game(){
-        new Window(HEIGHT, WIDTH, TITLE, this);
+        new Window(HEIGHT * SCALE, WIDTH * SCALE, TITLE, this);
     }
     public synchronized void start(){
         
