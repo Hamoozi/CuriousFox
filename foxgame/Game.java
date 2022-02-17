@@ -1,4 +1,4 @@
-package MarioGame;
+package foxgame;
 import java.awt.Canvas;
 
 
