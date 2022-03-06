@@ -6,7 +6,7 @@ import java.awt.Canvas;
 
 public class Game extends Canvas implements Runnable{
     public static final int WIDTH = 640, HEIGHT  = WIDTH / 12 * 9, SCALE = 4;
-    public static final String TITLE = "Super Mario bros";
+    public static final String TITLE = "Curious Fox";
     private Thread thread;
     private boolean running = false;
 
