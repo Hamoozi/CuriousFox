@@ -2,7 +2,9 @@ package foxgame;
 import java.awt.Canvas;
 
 
-
+/**
+ * @author Hamoozi
+ */
 
 
 
@@ -11,6 +13,9 @@ public class Game extends Canvas implements Runnable{
     public static final String TITLE = "Curious Fox";
     private Thread thread;
     private boolean running = false;
+
+
+
 
     public Game(){
         new Window(HEIGHT * SCALE, WIDTH * SCALE, TITLE, this);
@@ -25,17 +30,19 @@ public class Game extends Canvas implements Runnable{
 
 
     }
+	//Stops the game
     protected synchronized void stop(){
     	if(running) return;
     	running = false;
     	try {
 			thread.join();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
     }
+
+	//Runs game on screen
     public void run(){
     	long lastTime = System.nanoTime();
     	
@@ -89,13 +96,19 @@ public class Game extends Canvas implements Runnable{
 
     }
     
+	//Will render the game
+	//To be implemented in the future
     public void render() {
     	
     }
 
+
     public void tick() {
     	
     }
+
+
+	//Runs game
     public static void main(String args[]){
 
         new Game();

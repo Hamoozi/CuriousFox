@@ -4,7 +4,7 @@ import java.awt.Dimension;
 import javax.swing.JFrame;
 /**
  *
- *@author Hamza Wahhas
+ *@author Hamoozi
  */
 
 
@@ -12,7 +12,11 @@ import javax.swing.JFrame;
 
 public class Window extends Canvas{
 
+
+    //Filling out the dimensions for the window
+    //Will cover whole screen
     public Window(int HEIGHT, int WIDTH, String TITLE, Game game){
+
         JFrame frame = new JFrame(TITLE);
         frame.setPreferredSize(new Dimension(WIDTH, HEIGHT));
         frame.setMaximumSize(new Dimension(WIDTH, HEIGHT));
